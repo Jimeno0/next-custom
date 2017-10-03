@@ -5,7 +5,7 @@ class User extends Component {
   render() {
   	return (
     <section className={this.props.className}>
-      {`This is the User: ${this.props.url.query.user} page `}
+      {`This is the User: ${this.props.url.query.user} page`}
     </section>
    	);
   }

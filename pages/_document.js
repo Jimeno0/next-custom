@@ -1,6 +1,6 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
-import { ServerStyleSheet } from 'styled-components';
+import { ServerStyleSheet, injectGlobal } from 'styled-components';
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -15,6 +15,7 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <title>My page</title>
+          <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,600,700' rel='stylesheet' />
           {this.props.styleTags}
         </Head>
         <body>
@@ -25,3 +26,10 @@ export default class MyDocument extends Document {
     );
   }
 }
+
+injectGlobal`
+  * body{
+    font-family: "Raleway", "微软雅黑", "STXihei";
+  }
+`;
+
