@@ -9,9 +9,22 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.1.5",
     "next": "latest",
+    "next-routes": "^1.0.40",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "styled-components": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-standard-jsx": "^3.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.8.0",
+    "eslint-plugin-standard": "^2.0.1"
   },
   "license": "ISC"
 }
